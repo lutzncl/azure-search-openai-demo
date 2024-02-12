@@ -5,7 +5,7 @@ import styles from "./Example.module.css";
 const DEFAULT_EXAMPLES: string[] = [
     "How can housing associations benefit from the Heat Incentive?",
     "What are the best options for exterior shading?",
-    "How can housing associations promote energy efficiency measures to their tenants?"
+    "How to promote energy efficiency measures to my tenants?"
 ];
 
 const GPT4V_EXAMPLES: string[] = [
