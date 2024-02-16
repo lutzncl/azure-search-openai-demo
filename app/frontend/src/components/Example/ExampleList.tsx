@@ -3,7 +3,7 @@ import { Example } from "./Example";
 import styles from "./Example.module.css";
 
 const DEFAULT_EXAMPLES: string[] = [
-    "How can housing associations benefit from the Heat Incentive?",
+    "What is the best way to ensure high efficiency from heat pumps?",
     "What are the best options for exterior shading?",
     "How to promote energy efficiency measures to my tenants?"
 ];

@@ -3,6 +3,7 @@
 This guide provides more details for customizing the Chat App.
 
 - [Using your own data](#using-your-own-data)
+- [Customizing the Embedding Model](#customizing-the-embedding-model)
 - [Customizing the UI](#customizing-the-ui)
 - [Customizing the backend](#customizing-the-backend)
   - [Chat/Ask approaches](#chatask-approaches)
@@ -15,6 +16,10 @@ This guide provides more details for customizing the Chat App.
 ## Using your own data
 
 The Chat App is designed to work with any PDF documents. The sample data is provided to help you get started quickly, but you can easily replace it with your own data. You'll want to first remove all the existing data, then add your own. See the [data ingestion guide](data_ingestion.md) for more details.
+
+## Customizing the Embedding Model
+
+The OpenAI embedding model is defined in the [embeddings.py](/scripts/prepdocslib/embeddings.py) script.
 
 ## Customizing the UI
 
