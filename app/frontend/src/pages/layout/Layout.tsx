@@ -29,7 +29,7 @@ const Layout = () => {
                                 </NavLink>
                             </li>
                             <li className={styles.headerNavLeftMargin}>
-                                <a href="https://energysavingtrust.org.uk" target={"_blank"} title="Github repository link">
+                                <a href="https://energysavingtrust.org.uk" target={"_blank"} title="EST Website link">
                                     <img
                                         src="https://energysavingtrust.org.uk/wp-content/themes/chd/assets/icons/logo.svg"
                                         alt="Energy Saving Trust logo"
