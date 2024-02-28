@@ -81,7 +81,7 @@ param chatGptModelName string = (openAiHost == 'azure') ? 'gpt-35-turbo' : 'gpt-
 param chatGptModelVersion string = '0613'
 param embeddingDeploymentName string // Set in main.parameters.json
 param embeddingDeploymentCapacity int = 30
-param embeddingModelName string = 'text-embedding-ada-002'
+param embeddingModelName string = 'text-embedding-3-small'
 param gpt4vModelName string = 'gpt-4'
 param gpt4vDeploymentName string = 'gpt-4v'
 param gpt4vModelVersion string = 'vision-preview'
