@@ -1,6 +1,6 @@
 import { Outlet, NavLink, Link } from "react-router-dom";
 
-import github from "../../assets/github.svg";
+import github from "../../assets/WelshZCH.svg";
 
 import styles from "./Layout.module.css";
 
@@ -28,21 +28,18 @@ const Layout = () => {
                                     Ask a question
                                 </NavLink>
                             </li>
-                            <li className={styles.headerNavLeftMargin}>
-                                <a href="https://energysavingtrust.org.uk" target={"_blank"} title="EST Website link">
+                        </ul>
+                    </nav>
+                    <a href="https://zerocarbonhwb.cymru/knowledge-hwb/" target={"_blank"} title="Welsh Zero Carbon Knowledge Hwb">
                                     <img
-                                        src="https://energysavingtrust.org.uk/wp-content/themes/chd/assets/icons/logo.svg"
-                                        alt="Energy Saving Trust logo"
-                                        aria-label="Link to Energy Saving Trust Website"
-                                        width="20px"
-                                        height="20px"
+                                        src={github}
+                                        alt="WelshZCH logo"
+                                        aria-label="Link to WelshZCH logo"
+                                        width="100px"
+                                        height="60px"
                                         className={styles.githubLogo}
                                     />
                                 </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <h4 className={styles.headerRightText}>Azure OpenAI + AI Search</h4>
                     {useLogin && <LoginButton />}
                 </div>
             </header>
