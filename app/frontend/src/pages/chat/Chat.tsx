@@ -281,9 +281,8 @@ const Chat = () => {
                         <div className={styles.chatEmptyState}>
                             <SparkleFilled fontSize={"120px"} primaryFill={"rgba(115, 118, 225, 1)"} aria-hidden="true" aria-label="Chat logo" />
                             <h1 className={styles.chatEmptyStateTitle}>Chat with Welsh Zero Carbon Hwb data</h1>
-                            <h2 className={styles.chatEmptyStateSubtitle}>Ask anything or try an example</h2>
-                            <h3 className={styles.chatEmptyStateSubtitle}>Ask in Welsh to get a Welsh answer</h3>
                             <ExampleList onExampleClicked={onExampleClicked} useGPT4V={useGPT4V} />
+                            <h3 className={styles.chatEmptyStateSubtitle}>Ask in Welsh to get a Welsh answer</h3>
                         </div>
                     ) : (
                         <div className={styles.chatMessageStream}>
