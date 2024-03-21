@@ -13,9 +13,16 @@ const Layout = () => {
         <div className={styles.layout}>
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
-                    <Link to="/" className={styles.headerTitleContainer}>
-                        <h3 className={styles.headerTitle}>GPT + EST data | Sample</h3>
-                    </Link>
+                <a href="https://zerocarbonhwb.cymru/knowledge-hwb/" target={"_blank"} title="Welsh Zero Carbon Knowledge Hwb">
+                        <img
+                            src={github}
+                            alt="WelshZCH logo"
+                            aria-label="Link to WelshZCH logo"
+                            width="100px"
+                            height="60px"
+                            className={styles.githubLogo}
+                        />
+                    </a>
                     <nav>
                         <ul className={styles.headerNavList}>
                             <li>
@@ -30,16 +37,6 @@ const Layout = () => {
                             </li>
                         </ul>
                     </nav>
-                    <a href="https://zerocarbonhwb.cymru/knowledge-hwb/" target={"_blank"} title="Welsh Zero Carbon Knowledge Hwb">
-                                    <img
-                                        src={github}
-                                        alt="WelshZCH logo"
-                                        aria-label="Link to WelshZCH logo"
-                                        width="100px"
-                                        height="60px"
-                                        className={styles.githubLogo}
-                                    />
-                                </a>
                     {useLogin && <LoginButton />}
                 </div>
             </header>
