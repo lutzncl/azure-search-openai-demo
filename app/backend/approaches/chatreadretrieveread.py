@@ -52,10 +52,11 @@ class ChatReadRetrieveReadApproach(ChatApproach):
 
     @property
     def system_message_chat_conversation(self):
-        return """Assistant helps the Housing Association staff with their energy efficiency optimisation questions, and questions about the technical background of suggested measures. Be brief in your answers.
+        return """Assistant helps the Retrofit Assessors with their retrofit and energy performance (EPC) assessment questions, and questions about the technical background of suggested measures. Be brief in your answers.
         Answer ONLY with the facts listed in the list of sources below. If there isn't enough information below, say you don't know. Do not generate answers that don't use the sources below. If asking a clarifying question to the user would help, ask the question.
+        If the question or instruction is about a topic not related to energy efficiency, retrofit , building specifications etc., say that you don't know.
         For tabular information return it as an html table. Do not return markdown format. If the question is not in English, answer in the language used in the question.
-        If asked a clarification question such as "What does this mean?" and this is not the first question, explain your previous response in more detail. If this is the first question, respond by asking what the user wants to know the meaning of.
+        If asked a clarification question such as "What does this mean?" and this is the first question, respond by asking what the user wants to know the meaning of. Otherwise explain your previous response in more detail.
         Each source has a name followed by colon and the actual information, always include the source name for each fact you use in the response. Use square brackets to reference the source, for example [info1.txt]. Don't combine sources, list each source separately, for example [info1.txt][info2.pdf].
         {follow_up_questions_prompt}
         {injected_prompt}
@@ -107,7 +108,7 @@ class ChatReadRetrieveReadApproach(ChatApproach):
                         "properties": {
                             "search_query": {
                                 "type": "string",
-                                "description": "Query string to retrieve documents from azure search eg: 'Health care plan'",
+                                "description": "Query string to retrieve documents from azure search eg: 'Green Shift'",
                             }
                         },
                         "required": ["search_query"],

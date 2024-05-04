@@ -10,6 +10,11 @@
     display: flex;
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
+    .chatRoot {
+        flex-direction: column-reverse;
+    }
+}
 .chatContainer {
     flex: 1;
     display: flex;
@@ -19,7 +24,6 @@
 }
 
 .chatEmptyState {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,17 +34,31 @@
 }
 
 .chatEmptyStateTitle {
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     background: #ffeeeb;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
 }
 
 .chatEmptyStateSubtitle {
     font-weight: 600;
     margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #ffeeeb;
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+
+.chatQuestionInstruction {
+    font-weight: 600;
+    padding-top: 10px;
+    text-align: right;
+    background-color: #ecfdf7;
 }
 
 @media only screen and (max-height: 780px) {
@@ -70,7 +88,6 @@
     margin-bottom: 20px;
     max-width: 80%;
     display: flex;
-    min-width: 500px;
 }
 
 .chatMessageGptMinWidth {
@@ -82,13 +99,14 @@
     position: sticky;
     bottom: 0;
     flex: 0 0 100px;
-    padding-top: 12px;
-    padding-bottom: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     width: 100%;
     max-width: 1028px;
-    background: #f2f2f2;
+    background: #ecfdf7;
+    border-radius: 8px;
 }
 
 .chatAnalysisPanel {
